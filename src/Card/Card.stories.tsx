@@ -1,6 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
+import React from 'react'
 import Card from './Card'
+import CardHeader from '../CardHeader'
 
 const meta: Meta<typeof Card> = {
   component: Card
@@ -11,7 +13,7 @@ type Story = StoryObj<typeof Card>
 
 export const Primary: Story = {
   args: {
-    children: 'Card children',
+    // children: <CardHeader />,
     width: "",
     heigth: ""
   }

@@ -1,4 +1,5 @@
 import React from "react"
+import CardHeader from "../CardHeader"
 
 type CardProps = {
   // style?: React.CSSProperties,
@@ -22,7 +23,8 @@ const Card = ({ children, width, heigth }: CardProps) => {
   return (
     <>
       <div className={`flex flex-col ${width ? width : "min-w-60"} ${heigth ? heigth : "min-h-72"} border rounded shadow-md`}>
-        {children}
+        {/* {children} */}
+        <CardHeader />
       </div>
     </>
   )
