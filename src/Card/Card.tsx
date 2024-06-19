@@ -26,7 +26,7 @@ const Card = ({ children, width, heigth }: CardProps) => {
 
   return (
     <>
-      <div className={`flex flex-col ${width ? width : "w-52"} ${heigth ? heigth : "h-64"} border rounded-md shadow-md`}>
+      <div className={`flex flex-col ${width ? width : "w-80"} ${heigth ? heigth : "h-min-52"} border rounded-xl shadow-md`}>
         {children}
       </div>
     </>

@@ -2,6 +2,7 @@ import React from "react"
 
 export type CardBodyProps = {
   children: React.ReactNode
+
 }
 
 const CardBody = ({ children }: CardBodyProps) => {
