@@ -1,5 +1,8 @@
 import React from "react"
+// component import
 import CardHeader from "../CardHeader"
+import CardFooter from "../CardFooter"
+import CardBody from "../CardBody"
 
 type CardProps = {
   // style?: React.CSSProperties,
@@ -19,12 +22,12 @@ type CardProps = {
 const Card = ({ children, width, heigth }: CardProps) => {
 
   // const sizeClass = sizes[size]
+  // const widthString: string = `w-[${width}]`
 
   return (
     <>
-      <div className={`flex flex-col ${width ? width : "min-w-60"} ${heigth ? heigth : "min-h-72"} border rounded shadow-md`}>
-        {/* {children} */}
-        <CardHeader />
+      <div className={`flex flex-col ${width ? width : "w-52"} ${heigth ? heigth : "h-64"} border rounded-md shadow-md`}>
+        {children}
       </div>
     </>
   )
