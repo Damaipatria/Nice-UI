@@ -36,6 +36,7 @@ export const HeaderFooter: Story = {
 }
 
 const CardWithImage = () => {
+
   return (
     <>
       <CardImage src='https://picsum.photos/id/26/400/200' />
