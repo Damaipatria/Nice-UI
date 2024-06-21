@@ -1,10 +1,10 @@
-import React from "react"
+import React, { ButtonHTMLAttributes } from "react"
 
-type ButtonProps = {
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode
   className?: string,
   size?: 'sm' | 'md' | 'lg',
-  color: 'primary' | 'secondary' | 'succes' | 'danger' | 'warning' | 'outline-primary' | 'outline-secondary' | 'outline-succes' | 'outline-danger' | 'outline-warning' 
+  color?: 'primary' | 'secondary' | 'succes' | 'danger' | 'warning' | 'outline-primary' | 'outline-secondary' | 'outline-succes' | 'outline-danger' | 'outline-warning',
 }
 
 const sizes = {

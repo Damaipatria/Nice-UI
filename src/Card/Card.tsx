@@ -1,9 +1,4 @@
 import React from "react"
-// component import
-import CardHeader from "../CardHeader"
-import CardFooter from "../CardFooter"
-import CardBody from "../CardBody"
-// import { CardContext, CardProvider } from "../Context/CardContext"
 
 type CardProps = {
   // style?: React.CSSProperties,
@@ -25,13 +20,11 @@ const Card = ({ children, width, heigth }: CardProps) => {
   // const sizeClass = sizes[size]
   // const widthString: string = `w-[${width}]`
 
-  // console.log(imgOverlays?.value)
-
   return (
     <>
-        <div className={`flex flex-col relative ${width ? width : "w-80"} ${heigth ? heigth : "h-min-52"} border rounded-xl shadow-md`}>
-          {children}
-        </div>
+      <div className={`flex flex-col relative ${width ? width : "w-80"} ${heigth ? heigth : "h-min-52"} border rounded-xl shadow-md`}>
+        {children}
+      </div>
     </>
   )
 }
