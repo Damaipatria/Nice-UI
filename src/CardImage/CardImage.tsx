@@ -1,19 +1,16 @@
-import React, { useContext } from "react"
-import { CardContext } from "../Card/Card"
+import React from "react"
 
 export type CardProps = {
   src: string
   alt?: string
+  overlays?: boolean
 }
 
-const CardImage = ({ src, alt }: CardProps) => {
-
-  const cardContext = useContext(CardContext)
+const CardImage = ({ src, alt, overlays }: CardProps) => {
 
   return (
     <>
-      <img src={src} alt={alt} className="w-full rounded-t-xl" />
-      <button className="text-white bg-blue-500 hover:bg-blue-600 active:bg-blue-700" onClick={() => { cardContext?.updateImgOverlays(true) }}>change imgOverlays value</button>
+      <img src={src} alt={alt} className={`w-full ${overlays ? 'absolute -z-10 h-full rounded-xl': 'rounded-t-xl'}`} />
     </>
   )
 }
