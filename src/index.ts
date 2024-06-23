@@ -3,6 +3,7 @@ import './main.css'
 
 // components export
 export { default as Accordion } from './Accordion'
+export { default as AccordionItem } from './AccordionItem'
 
 export { default as Button } from './Button'
 
