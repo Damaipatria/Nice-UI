@@ -13,7 +13,7 @@ export const AccordionContext = createContext<AccordionContextType | null>(null)
 
 export const AccordionProvider = ({ children }: { children: React.ReactNode }) => {
 
-  const [isActive, setIsActive] = useState<IAccordionContext>({ active: 'Accordion#1' })
+  const [isActive, setIsActive] = useState<IAccordionContext>({ active: '' })
 
   const updateIsActive = (key: string) => {
     setIsActive({ active: key })
