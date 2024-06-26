@@ -26,14 +26,14 @@ const colors = {
   "outline-warning": 'text-yellow-500 border border-yellow-500 hover:text-white hover:bg-yellow-600 active:bg-yellow-700',
 }
 
-const Button = ({ children, className, size = 'sm', color = 'primary' }: ButtonProps) => {
+const Button = ({ children, className, size = 'sm', color = 'primary', ...props }: ButtonProps) => {
 
   const sizeClass = sizes[size]
   const colorClass = colors[color]
 
   return (
     <>
-      <button className={`${sizeClass} ${colorClass} font-semibold rounded-md ${className}`}>
+      <button className={`${sizeClass} ${colorClass} font-semibold rounded-md ${className}`} {...props}>
         {children}
       </button>
     </>
